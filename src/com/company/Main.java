@@ -19,7 +19,7 @@ public class Main {
                 System.out.println();
                 jogo.printTabuleiro();
                 if (winner > 0 || times >= 9) {
-                    winner = -1;
+                    if (times >= 9) winner = -1;
                     break;
                 }
             }
